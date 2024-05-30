@@ -1,0 +1,1109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DataEditActivity">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="100dp"
+                android:padding="5dp"
+                android:layout_marginBottom="16dp"
+                >
+                <ImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/man"
+                    android:scaleType="centerCrop"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <Button
+                android:id="@+id/btn_upload_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Photo"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/grouph_lay_bg"
+                android:padding="10dp"
+                >
+
+                <EditText
+                    android:id="@+id/fullNameEditTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Full Name"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/edit_txt_bg"
+                    android:padding="10dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <EditText
+                    android:id="@+id/positionEditTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Position"
+                    android:inputType="text"
+                    android:background="@drawable/edit_txt_bg"
+                    android:padding="10dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <EditText
+                    android:id="@+id/emailEditTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="text"
+                    android:background="@drawable/edit_txt_bg"
+                    android:padding="10dp"
+                    android:importantForAutofill="no"
+                    android:layout_marginBottom="8dp"/>
+
+                <EditText
+                    android:id="@+id/phoneEditTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone"
+                    android:inputType="phone"
+                    android:background="@drawable/edit_txt_bg"
+                    android:padding="10dp"
+                    android:importantForAutofill="no"
+                    android:layout_marginBottom="8dp"/>
+
+                <EditText
+                    android:id="@+id/websiteEditTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Website"
+                    android:inputType="text"
+                    android:importantForAutofill="no"
+                    android:background="@drawable/edit_txt_bg"
+                    android:padding="10dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <EditText
+                    android:id="@+id/addressEditTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Address"
+                    android:background="@drawable/edit_txt_bg"
+                    android:padding="10dp"
+                    android:inputType="text"
+                    android:importantForAutofill="no"
+                    android:layout_marginBottom="8dp"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="About You"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/edit_txt_bg"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/grouph_lay_bg"
+                android:padding="10dp"
+                >
+
+                <EditText
+                    android:id="@+id/aboutMeEditTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:gravity="start"
+                    android:hint="Write About You"
+                    android:inputType="textMultiLine"
+                    android:background="@drawable/edit_txt_bg"
+                    android:padding="10dp"
+                    android:importantForAutofill="no"
+                    />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Work Expreance - 01"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/edit_txt_bg"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/grouph_lay_bg"
+                android:padding="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/workEx1StartDate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:hint="Start"
+                        android:inputType="text"
+                        android:background="@drawable/edit_txt_bg"
+                        android:padding="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:importantForAutofill="no"
+                        tools:ignore="TextFields" />
+
+                    <EditText
+                        android:id="@+id/workEx1EndDate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:hint="End"
+                        android:inputType="text"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/edit_txt_bg"
+                        android:padding="10dp"
+                        android:importantForAutofill="no"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/workEx1CompanyNameEdtTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:hint="Company Name"
+                    android:inputType="text"
+                    android:background="@drawable/edit_txt_bg"
+                    android:padding="10dp"
+                    android:importantForAutofill="no"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <EditText
+                    android:id="@+id/workEx1ResponsibilitieEdtTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="start"
+                    android:hint="Responsibilitie"
+                    android:inputType="textMultiLine"
+                    android:background="@drawable/edit_txt_bg"
+                    android:padding="10dp"
+                    android:importantForAutofill="no"
+                    android:layout_marginTop="10dp"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Work Expreance - 02"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/edit_txt_bg"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/grouph_lay_bg"
+                android:padding="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/workEx2StartDate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:hint="Start"
+                        android:inputType="text"
+                        android:background="@drawable/edit_txt_bg"
+                        android:padding="10dp"
+                        android:importantForAutofill="no"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        />
+
+                    <EditText
+                        android:id="@+id/workEx2EndDate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:hint="End"
+                        android:inputType="text"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/edit_txt_bg"
+                        android:padding="10dp"
+                        android:importantForAutofill="no"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/workEx2CompanyNameEdtTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:hint="Company Name"
+                    android:inputType="text"
+                    android:importantForAutofill="no"
+                    android:background="@drawable/edit_txt_bg"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <EditText
+                    android:id="@+id/workEx2ResponsibilitieEdtTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="start"
+                    android:hint="Responsibilitie"
+                    android:inputType="textMultiLine"
+                    android:background="@drawable/edit_txt_bg"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:importantForAutofill="no"
+                    />
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Work Expreance - 03"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/edit_txt_bg"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/grouph_lay_bg"
+                android:padding="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/workEx3StartDate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:hint="Start"
+                        android:inputType="text"
+                        android:background="@drawable/edit_txt_bg"
+                        android:padding="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:importantForAutofill="no"
+                        />
+
+                    <EditText
+                        android:id="@+id/workEx3EndDate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:hint="End"
+                        android:inputType="text"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/edit_txt_bg"
+                        android:padding="10dp"
+                        android:layout_weight="1"
+                        android:importantForAutofill="no"
+                        />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/workEx3CompanyNameEdtTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:hint="Company Name"
+                    android:inputType="text"
+                    android:background="@drawable/edit_txt_bg"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:importantForAutofill="no"
+                    />
+
+                <EditText
+                    android:id="@+id/workEx3ResponsibilitieEdtTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="start"
+                    android:hint="Responsibilitie"
+                    android:inputType="textMultiLine"
+                    android:background="@drawable/edit_txt_bg"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:importantForAutofill="no"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Education - 01"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/edit_txt_bg"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/grouph_lay_bg"
+                android:padding="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/Edu1StartEditTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:hint="Start"
+                        android:inputType="text"
+                        android:background="@drawable/edit_txt_bg"
+                        android:padding="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:importantForAutofill="no"
+                        android:layout_weight="1"
+                        />
+
+                    <EditText
+                        android:id="@+id/Edu1EndEditTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:hint="End"
+                        android:inputType="text"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/edit_txt_bg"
+                        android:padding="10dp"
+                        android:layout_weight="1"
+                        android:importantForAutofill="no"
+                        />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/Edu1DepertmentEdtTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:hint="Degree / Depertment"
+                    android:inputType="text"
+                    android:background="@drawable/edit_txt_bg"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:importantForAutofill="no"
+                    />
+
+                <EditText
+                    android:id="@+id/Edu1UniversityEdtTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:hint="College / University"
+                    android:inputType="textMultiLine"
+                    android:background="@drawable/edit_txt_bg"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:importantForAutofill="no"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Education - 02"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/edit_txt_bg"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/grouph_lay_bg"
+                android:padding="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/edu2StartEditTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:hint="Start"
+                        android:inputType="text"
+                        android:background="@drawable/edit_txt_bg"
+                        android:padding="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:importantForAutofill="no"
+                        />
+
+                    <EditText
+                        android:id="@+id/edu2EndEditTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:hint="End"
+                        android:inputType="text"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/edit_txt_bg"
+                        android:padding="10dp"
+                        android:layout_weight="1"
+                        android:importantForAutofill="no"
+                        />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edu2DepertmentEditTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:hint="Degree / Depertment"
+                    android:inputType="text"
+                    android:background="@drawable/edit_txt_bg"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:importantForAutofill="no"
+                    />
+
+                <EditText
+                    android:id="@+id/edu2UniversityEditTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:hint="College / University"
+                    android:inputType="textMultiLine"
+                    android:background="@drawable/edit_txt_bg"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:importantForAutofill="no"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Expertice"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/edit_txt_bg"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/grouph_lay_bg"
+                android:padding="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/expertice1EdtTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:hint="Expertice-1"
+                        android:inputType="text"
+                        android:background="@drawable/edit_txt_bg"
+                        android:padding="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:importantForAutofill="no"
+                        tools:ignore="InvalidId" />
+
+                    <EditText
+                        android:id="@+id/expertice2EdtTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:hint="Expertice-2"
+                        android:inputType="text"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/edit_txt_bg"
+                        android:padding="10dp"
+                        android:importantForAutofill="no"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="5dp"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/expertice3EdtTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:hint="Expertice-3"
+                        android:inputType="text"
+                        android:background="@drawable/edit_txt_bg"
+                        android:padding="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:importantForAutofill="no"
+                        />
+
+                    <EditText
+                        android:id="@+id/expertice4EdtTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:hint="Expertice-4"
+                        android:inputType="text"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/edit_txt_bg"
+                        android:padding="10dp"
+                        android:layout_weight="1"
+                        android:importantForAutofill="no"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="5dp"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/expertice5EdtTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:hint="Expertice-5"
+                        android:inputType="text"
+                        android:background="@drawable/edit_txt_bg"
+                        android:padding="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:importantForAutofill="no"
+                        android:layout_weight="1"
+                        />
+
+                    <EditText
+                        android:id="@+id/expertice6EdtTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:hint="Expertice-6"
+                        android:inputType="text"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/edit_txt_bg"
+                        android:padding="10dp"
+                        android:importantForAutofill="no"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Language"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/edit_txt_bg"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/grouph_lay_bg"
+                android:padding="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/language1EditTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:hint="Language-1"
+                        android:inputType="text"
+                        android:background="@drawable/edit_txt_bg"
+                        android:padding="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:importantForAutofill="no"
+                        android:layout_weight="1"
+                        />
+
+                    <EditText
+                        android:id="@+id/language2EditTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:hint="Language-2"
+                        android:inputType="text"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/edit_txt_bg"
+                        android:padding="10dp"
+                        android:importantForAutofill="no"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="5dp"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/language3EditTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:hint="Language-3"
+                        android:inputType="text"
+                        android:background="@drawable/edit_txt_bg"
+                        android:padding="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:importantForAutofill="no"
+                        android:layout_weight="1"
+                        />
+
+                    <EditText
+                        android:id="@+id/language4EditTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:hint="Language-4"
+                        android:inputType="text"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/edit_txt_bg"
+                        android:padding="10dp"
+                        android:importantForAutofill="no"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="5dp"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/language5EditTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:hint="Language-5"
+                        android:inputType="text"
+                        android:background="@drawable/edit_txt_bg"
+                        android:padding="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:importantForAutofill="no"
+                        android:layout_weight="1"
+                        />
+
+                    <EditText
+                        android:id="@+id/language6EditTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:hint="Language-6"
+                        android:inputType="text"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/edit_txt_bg"
+                        android:padding="10dp"
+                        android:importantForAutofill="no"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Reference -1"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/edit_txt_bg"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/grouph_lay_bg"
+                android:padding="10dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/ref1NameEditTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:hint="Name"
+                    android:inputType="text"
+                    android:background="@drawable/edit_txt_bg"
+                    android:padding="10dp"
+                    android:importantForAutofill="no"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <EditText
+                    android:id="@+id/ref1PositionEditTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:hint="Position"
+                    android:inputType="text"
+                    android:background="@drawable/edit_txt_bg"
+                    android:padding="10dp"
+                    android:importantForAutofill="no"
+                    android:layout_marginBottom="5dp"                />
+
+                <EditText
+                    android:id="@+id/ref1CompanyEditTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:hint="Company"
+                    android:inputType="text"
+                    android:background="@drawable/edit_txt_bg"
+                    android:padding="10dp"
+                    android:importantForAutofill="no"
+                    android:layout_marginBottom="5dp"                />
+
+                <EditText
+                    android:id="@+id/ref1EmailEditTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:hint="E-mail"
+                    android:inputType="text"
+                    android:background="@drawable/edit_txt_bg"
+                    android:padding="10dp"
+                    android:importantForAutofill="no"
+                    android:layout_marginBottom="5dp"                />
+
+                <EditText
+                    android:id="@+id/ref1PhoneEditTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:hint="Phone"
+                    android:inputType="text"
+                    android:importantForAutofill="no"
+                    android:background="@drawable/edit_txt_bg"
+                    android:padding="10dp"
+                    android:layout_marginBottom="5dp"                />
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Reference -2"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/edit_txt_bg"
+                />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/grouph_lay_bg"
+                android:padding="10dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/ref2NameEditTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:hint="Name"
+                    android:inputType="text"
+                    android:background="@drawable/edit_txt_bg"
+                    android:padding="10dp"
+                    android:importantForAutofill="no"
+                    android:layout_marginBottom="5dp"                />
+
+                <EditText
+                    android:id="@+id/ref2PositionEditTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:hint="Position"
+                    android:inputType="text"
+                    android:background="@drawable/edit_txt_bg"
+                    android:padding="10dp"
+                    android:importantForAutofill="no"
+                    android:layout_marginBottom="5dp"                />
+
+                <EditText
+                    android:id="@+id/ref2CompanyEditTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:hint="Company"
+                    android:inputType="text"
+                    android:background="@drawable/edit_txt_bg"
+                    android:padding="10dp"
+                    android:importantForAutofill="no"
+                    android:layout_marginBottom="5dp"                />
+
+                <EditText
+                    android:id="@+id/ref2EmailEditTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:hint="E-mail"
+                    android:inputType="text"
+                    android:background="@drawable/edit_txt_bg"
+                    android:padding="10dp"
+                    android:importantForAutofill="no"
+                    android:layout_marginBottom="5dp"                />
+
+                <EditText
+                    android:id="@+id/ref2PhoneEditTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:hint="Phone"
+                    android:inputType="text"
+                    android:importantForAutofill="no"
+                    android:background="@drawable/edit_txt_bg"
+                    android:padding="10dp"
+                    android:layout_marginBottom="5dp"                />
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Update Information" />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>
